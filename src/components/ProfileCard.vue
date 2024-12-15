@@ -12,7 +12,7 @@
         </div>
 
         <!-- Name & Description -->
-        <h1 class="text-3xl font-bold mt-4">I'm Julius Junior Kazibwe</h1>
+        <h1 class="text-3xl font-bold mt-4">I'm Eng. Julius Junior Kazibwe</h1>
         <p class="text-gray-500 mt-2">
             Full Stack Software Engineer from Kampala, Uganda. <br> Currently a Senior Full Stack Software Engineer at
             Trail Analytics
