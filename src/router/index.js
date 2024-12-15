@@ -4,7 +4,8 @@ import ProjectsPage from './..//pages/Projects.vue';
 import ContactPage from './../pages/Products.vue';
 
 const routes = [
-    { path: '/', name: 'Home', component: HomePage },
+
+    { path: '/resume.io', name: 'Home', component: HomePage },
     { path: '/projects', name: 'Projects', component: ProjectsPage },
     { path: '/contact', name: 'Contact', component: ContactPage },
 ];

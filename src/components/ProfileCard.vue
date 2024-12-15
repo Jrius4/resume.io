@@ -12,9 +12,10 @@
         </div>
 
         <!-- Name & Description -->
-        <h1 class="text-3xl font-bold mt-4">I'm Julius Kazibwe</h1>
+        <h1 class="text-3xl font-bold mt-4">I'm Julius Junior Kazibwe</h1>
         <p class="text-gray-500 mt-2">
-            Product designer from Jakarta, ID. <br> Currently a Senior Full Stack Software Engineer at Trail Analytics
+            Full Stack Software Engineer from Kampala, Uganda. <br> Currently a Senior Full Stack Software Engineer at
+            Trail Analytics
             Limited.
         </p>
 
@@ -26,5 +27,5 @@
     </div>
 </template>
 <script setup>
-import avatar from "./../icons/man.png"
+import avatar from "./../icons/avatar.png"
 </script>
