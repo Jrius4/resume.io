@@ -6,7 +6,8 @@
         </div>
 
         <div class="space-y-4">
-            <div v-for="project in projects" :key="project.name" class="p-4 bg-gray-100 rounded-lg flex items-center">
+            <a @click="goto(project)" v-for="project in projects" :key="project.name"
+                class="p-4 bg-gray-100 rounded-lg flex items-center hover:bg-slate-200 hover:cursor-pointer">
                 <div class="w-10 h-10 bg-gray-300 rounded-full flex-shrink-0">
                     <!-- Replace with actual project icon -->
                 </div>
@@ -14,15 +15,29 @@
                     <h3 class="font-semibold">{{ project.name }}</h3>
                     <p class="text-sm text-gray-500">{{ project.description }}</p>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 </template>
 
 <script setup>
-const projects = [
-    { name: 'Rectangle', description: 'Product design, Icon design' },
-    { name: 'Morva Labs', description: 'Visual design, Branding' },
-    { name: 'Simply', description: 'Landing page, Illustration design' },
-];
+import { computed } from "vue"
+import { useProjectStore } from "./../store/projectStore";
+import { useRouter, useRoute } from "vue-router";
+
+const router = useRouter();
+const route = useRoute();
+
+const projectsStore = useProjectStore();
+
+
+const projects = computed(() => {
+    return projectsStore.projects;
+});
+const goto = (project) => {
+    // Navigate to project details page
+    // Replace with actual navigation logic
+    console.log("Navigating to project details page", { project });
+    router.push(`/resume.io/projects/${project.id}`);
+}
 </script>
