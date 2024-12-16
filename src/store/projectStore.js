@@ -1,5 +1,7 @@
 import { defineStore } from "pinia";
 
+
+
 export const useProjectStore = defineStore('projectStore', {
     state: () => ({
         projects: [
@@ -13,24 +15,12 @@ export const useProjectStore = defineStore('projectStore', {
                 stack: 'Backend: Laravel (PHP), MSQL,Frontend: Vue(Javascript) and Mobile App: Flutter(Dart)',
                 description:
                     'Generate resilient score, reporting for cooperatives',
-                website: 'cooprofiler.com',
-                image: '/images/001.jpg',
+                website: 'https://coopprofiler.com/',
+                image: './images/coopprofiler.png',
             },
+
             {
                 id: 2,
-                client: 'Trail Analytics',
-                company: 'Trail Analytics',
-                type: 'Website, App',
-                year: '2022',
-                stack: 'Backend: Laravel (PHP), MSQL,Frontend: Vue(Javascript) and Flutter(Dart)',
-                name: 'Trail Analytics',
-                description:
-                    'Analyze your trail data, identify trends, and optimize your operations',
-                website: 'trailanalytics.com',
-                image: '/images/002.jpg',
-            },
-            {
-                id: 3,
                 client: 'Trail Analytics',
                 company: 'Trail Analytics',
                 type: 'Website, App and Mobile',
@@ -39,8 +29,21 @@ export const useProjectStore = defineStore('projectStore', {
                 name: 'UNICEF, Digital Operations Platform',
                 description:
                     'Steamline UNICEF Standard Of Procedure in regards of their day to day tasks.\n Contain Approval Signing of Documents',
-                website: 'trailanalytics.com',
-                image: '/images/003.jpg',
+                website: 'https://dop.ssddigitalops.org/',
+                image: "./images/dop.png",
+            },
+            {
+                id: 3,
+                client: 'Fromyfarm',
+                company: 'Fromyfarm',
+                type: 'Mobile App',
+                stack: 'Backend: ExpressJs, MongoDB, Mobile: React Native (Javascript)',
+                year: '2023',
+                name: 'fromyfarm',
+                description:
+                    'Linking Farmers to the global Market',
+                website: 'https://fromyfarm.app/',
+                image: './images/fromyfarm.png',
             }
         ],
     }),

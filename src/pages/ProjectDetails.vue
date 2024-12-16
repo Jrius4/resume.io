@@ -20,7 +20,7 @@
 
             <!-- Project Image -->
             <div class="mt-6">
-                <img :src="project.image" alt="Project preview" class="rounded-lg shadow-lg" />
+                <img :src="imageUrl" alt="Project preview" class="rounded-lg shadow-lg" />
             </div>
         </div>
     </div>
@@ -38,6 +38,12 @@ const projectId = route.params.id;
 // Fetch project data from Pinia store
 const projectStore = useProjectStore();
 const project = computed(() => projectStore.getProjectById(projectId));
+
+const imageUrl = computed(() => {
+    return new URL(project.value.image, import.meta.url).href;
+});
+
+console.log(project.value.image);
 const gotoProject = (link) => {
     window.location.href = link;
 }
