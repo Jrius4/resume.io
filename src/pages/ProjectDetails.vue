@@ -41,7 +41,7 @@ const project = computed(() => projectStore.getProjectById(projectId));
 
 const imageUrl = computed(() => {
 
-    return new URL(`/resume.io/${project.value?.image}` || 'https://via.placeholder.com/600x400?text=No+Image+Available', import.meta.url).href;
+    return new URL(`${project.value?.image}` || 'https://via.placeholder.com/600x400?text=No+Image+Available', import.meta.url).href;
     // return project.value?.image || 'https://via.placeholder.com/600x400?text=No+Image+Available';
 });
 

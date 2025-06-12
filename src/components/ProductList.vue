@@ -38,6 +38,6 @@ const goto = (project) => {
     // Navigate to project details page
     // Replace with actual navigation logic
     console.log("Navigating to project details page", { project });
-    router.push(`/resume.io/projects/${project.id}`);
+    router.push(`/projects/${project.id}`);
 }
 </script>

@@ -6,10 +6,10 @@ import ContactPage from './../pages/Products.vue';
 
 const routes = [
 
-    { path: '/resume.io/', name: 'Home', component: HomePage },
-    { path: '/resume.io/projects', name: 'Projects', component: ProjectsPage },
-    { path: '/resume.io/projects/:id', name: 'ProjectDetails', component: ProjectDetailsPage },
-    { path: '/resume.io/contact', name: 'Contact', component: ContactPage },
+    { path: '/', name: 'Home', component: HomePage },
+    { path: '/projects', name: 'Projects', component: ProjectsPage },
+    { path: '/projects/:id', name: 'ProjectDetails', component: ProjectDetailsPage },
+    { path: '/contact', name: 'Contact', component: ContactPage },
 ];
 
 const router = createRouter({

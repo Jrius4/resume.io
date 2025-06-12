@@ -4,7 +4,7 @@ import { fileURLToPath, URL } from 'url';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/resume.io/',
+  base: '/',
   plugins: [vue()],
   resolve: {
     alias: {
