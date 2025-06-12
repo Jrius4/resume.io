@@ -1,12 +1,11 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue';
 import { fileURLToPath, URL } from 'url';
-import { ghPages } from 'vite-plugin-gh-pages';
 
 // https://vite.dev/config/
 export default defineConfig({
   base: '/resume.io/',
-  plugins: [vue(), ghPages()],
+  plugins: [vue()],
   resolve: {
     alias: {
       "@/": fileURLToPath(new URL("./src", import.meta.url)),

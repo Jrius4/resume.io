@@ -16,7 +16,7 @@ export const useProjectStore = defineStore('projectStore', {
                 description:
                     'Generate resilient score, reporting for cooperatives',
                 website: 'https://coopprofiler.com/',
-                image: './images/coopprofiler.png',
+                image: '/images/coopprofiler.png',
             },
 
             {
@@ -30,7 +30,7 @@ export const useProjectStore = defineStore('projectStore', {
                 description:
                     'Steamline UNICEF Standard Of Procedure in regards of their day to day tasks.\n Contain Approval Signing of Documents',
                 website: 'https://dop.ssddigitalops.org/',
-                image: "./images/dop.png",
+                image: "/images/dop.png",
             },
             {
                 id: 3,
@@ -43,7 +43,7 @@ export const useProjectStore = defineStore('projectStore', {
                 description:
                     'Linking Farmers to the global Market',
                 website: 'https://fromyfarm.app/',
-                image: './images/fromyfarm.png',
+                image: '/images/fromyfarm.png',
             }
         ],
     }),
